@@ -29,7 +29,13 @@ public class alertBoxhandle {
 			Alert alt1 = wd.switchTo().alert();  //Interface
 			alt.dismiss(); //for(-) response cancel button
 			
-		
+			Thread.sleep(2000);
+			wd.findElement(By.name("promptalertbox1234")).click();
+			Thread.sleep(2000);
+			Alert alt2 = wd.switchTo().alert(); 
+			Thread.sleep(2000);
+			alt2.sendKeys("Yes"); 
+			alt2.accept();
 			
 			
 	}
