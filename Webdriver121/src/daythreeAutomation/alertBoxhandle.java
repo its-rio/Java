@@ -27,7 +27,7 @@ public class alertBoxhandle {
 			
 		wd.findElement(By.name("confirmalertbox")).click();
 			Alert alt1 = wd.switchTo().alert();  //Interface
-			alt.dismiss(); //for(-) response cancel button
+			alt1.dismiss(); //for(-) response cancel button
 			
 			Thread.sleep(2000);
 			wd.findElement(By.name("promptalertbox1234")).click();
