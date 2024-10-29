@@ -43,6 +43,13 @@ public class EventHandlingActions {
 		Actions act1 = new Actions(wd);
 		Thread.sleep(2000);
 		act1.dragAndDrop(drag, drop).perform();
+		
+		
+		WebElement move = wd.findElement(By.id("hover"));
+		// scroll down
+		act1.scrollByAmount(0, 500).perform();
+		// mouse hover
+		act1.moveToElement(move).perform();
 	}
 
 }
