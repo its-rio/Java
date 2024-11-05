@@ -1,6 +1,7 @@
 package first1;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -34,12 +35,15 @@ public class importFromfile {
 			XSSFRow rw = sh.getRow(i);
 			XSSFCell un = rw.getCell(0);
 			XSSFCell pw = rw.getCell(1);
+			XSSFCell res = rw.createCell(2);
 			
 			System.out.println("username= " + un +" ,password= "+ pw);
 			
 			try {
+				wd.findElement(By.id("user-name")).clear();
 				wd.findElement(By.id("user-name")).sendKeys(un.toString());
 				
+				wd.findElement(By.name("password")).clear();
 				wd.findElement(By.name("password")).sendKeys(pw.toString());
 				
 				wd.findElement(By.id("login-button")).click();
@@ -49,9 +53,13 @@ public class importFromfile {
 				wd.findElement(By.linkText("Logout")).click();
 				
 				System.out.println("Valid Data");
+				res.setCellValue("Valid");
 			} catch (Exception e) {
 				System.out.println("Invalid Data");
+				res.setCellValue("Invalid");
 			}
+			FileOutputStream fos = new FileOutputStream("C:\\\\Users\\\\faisa\\\\OneDrive\\\\Desktop\\\\Selenium\\\\Dataexcel.xlsx");
+					wk.write(fos);
 		}
 	}
 

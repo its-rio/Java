@@ -38,5 +38,7 @@ public class projectObjectModel {
 //		username(un);
 //		password(pw);
 //		login();
+			//or
+			//lp.loginprocess("standard_user","secret_sauce");
 //	}
 }
