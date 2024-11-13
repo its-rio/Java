@@ -1,33 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T11:33:16 IST" name="Default suite" finished-at="2024-11-11T11:33:22 IST" duration-ms="6113">
+  <suite started-at="2024-11-12T11:30:52 IST" name="Suite" finished-at="2024-11-12T11:32:36 IST" duration-ms="103975">
     <groups>
+      <group name="slow">
+        <method signature="demoAssertion.f()[pri:0, instance:demoTestNG2.demoAssertion@35ef1869]" name="f" class="demoTestNG2.demoAssertion"/>
+      </group> <!-- slow -->
     </groups>
-    <test started-at="2024-11-11T11:33:16 IST" name="Default test" finished-at="2024-11-11T11:33:22 IST" duration-ms="6113">
-      <class name="demoTestNG.demoSauce3">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:demoTestNG.demoSauce3@28eaa59a]" started-at="2024-11-11T11:33:16 IST" name="beforeClass" finished-at="2024-11-11T11:33:18 IST" duration-ms="1655" status="PASS">
+    <test started-at="2024-11-12T11:30:52 IST" name="DemoTestPrallel" finished-at="2024-11-12T11:32:36 IST" duration-ms="103975">
+      <class name="demoTestNG2.demoAssertion">
+        <test-method signature="f()[pri:0, instance:demoTestNG2.demoAssertion@35ef1869]" started-at="2024-11-12T11:31:25 IST" name="f" finished-at="2024-11-12T11:31:28 IST" duration-ms="2668" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoTestNG.demoSauce3@28eaa59a]" started-at="2024-11-11T11:33:18 IST" name="beforeMethod" finished-at="2024-11-11T11:33:21 IST" duration-ms="3274" status="PASS">
+        </test-method> <!-- f -->
+        <test-method signature="sauce()[pri:0, instance:demoTestNG2.demoAssertion@35ef1869]" started-at="2024-11-12T11:31:28 IST" name="sauce" description="This is for notes" finished-at="2024-11-12T11:32:36 IST" duration-ms="68187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sauce -->
+      </class> <!-- demoTestNG2.demoAssertion -->
+      <class name="demoTestNG2.demoDataProvider">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:30:52 IST" name="beforeMethod" finished-at="2024-11-12T11:31:01 IST" duration-ms="9141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="login()[pri:0, instance:demoTestNG.demoSauce3@28eaa59a]" started-at="2024-11-11T11:33:21 IST" name="login" finished-at="2024-11-11T11:33:22 IST" duration-ms="735" status="PASS">
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:31:01 IST" name="f" data-provider="dp" finished-at="2024-11-12T11:31:02 IST" duration-ms="537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:demoTestNG.demoSauce3@28eaa59a]" started-at="2024-11-11T11:33:22 IST" name="logout" finished-at="2024-11-11T11:33:22 IST" duration-ms="401" status="PASS">
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:31:02 IST" name="beforeMethod" finished-at="2024-11-12T11:31:10 IST" duration-ms="8473" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="close()[pri:0, instance:demoTestNG.demoSauce3@28eaa59a]" started-at="2024-11-11T11:33:22 IST" name="close" finished-at="2024-11-11T11:33:22 IST" duration-ms="141" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:31:10 IST" name="f" data-provider="dp" finished-at="2024-11-12T11:31:16 IST" duration-ms="5312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hdb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cdd]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- demoTestNG.demoSauce3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:31:16 IST" name="beforeMethod" finished-at="2024-11-12T11:31:20 IST" duration-ms="4324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f(java.lang.String,java.lang.String)[pri:0, instance:demoTestNG2.demoDataProvider@67a20f67]" started-at="2024-11-12T11:31:20 IST" name="f" data-provider="dp" finished-at="2024-11-12T11:31:25 IST" duration-ms="5279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wywe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qw]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- demoTestNG2.demoDataProvider -->
+    </test> <!-- DemoTestPrallel -->
+  </suite> <!-- Suite -->
 </testng-results>
