@@ -21,7 +21,8 @@ public class oop3Interface {
 		showable sh = new showable();
 		sh.input();
 		sh.output();
-		// Calling methods using parent and child this is applicable in abstraction only
+		// Calling methods using parent and child this is applicable in abstraction and interface 
+		//only
 		printable pr = new showable();
 		pr.input();
 		pr.output();
